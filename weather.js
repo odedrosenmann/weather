@@ -4,7 +4,10 @@ $(function() {
     console.log(JSON.stringify(data));
     
     // Put your code here. Don't change any other code in this file. You will be sad.
-    var markup = JSON.stringify(data);
+    var markup = "TODAY's max temperature is " + data.daily.data[0].apparentTemperatureMax+"."
+     +"  TOMORROW's max temperature is " + data.daily.data[1].apparentTemperatureMax+"."
+     +"  In 2 DAYS from today, the max temperature will be " + data.daily.data[2].apparentTemperatureMax+"."
+     +"  In 3 DAYS from today, the max temperature will be " + data.daily.data[3].apparentTemperatureMax+".";
     // End of your code
 
     $('.weather-report').html(markup);
