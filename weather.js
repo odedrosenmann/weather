@@ -4,7 +4,7 @@ $(function() {
     console.log(JSON.stringify(data));
     
     // Put your code here. Don't change any other code in this file. You will be sad.
-    var markup = "The weather report... " + "will be here when I finish my homework.";
+    var markup = JSON.stringify(data);
     // End of your code
 
     $('.weather-report').html(markup);
